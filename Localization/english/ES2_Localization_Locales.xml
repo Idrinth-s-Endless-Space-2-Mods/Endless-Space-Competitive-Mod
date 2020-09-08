@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- Hero Skills -->
+  <LocalizationPair Name="%HeroSkill75_Industry_PerAnomaly_EffectOverride">+50 [industryColored] on Colonized Planets with Anomalies on System</LocalizationPair>
+  <LocalizationPair Name="%HeroSkill75_SenateIndustry_PerAnomaly_EffectOverride">+10 [industryColored] on Colonized Planets with Anomalies on System</LocalizationPair>
+  <LocalizationPair Name="%HeroSkill91_Science_PerAnomalyFlat_EffectOverride">+20 [scienceColored] on Colonized Planets with Anomalies on System</LocalizationPair>
+  
+  <!-- Faction Traits -->
+  <!-- Tikanan -->
+  <LocalizationPair Name="%FactionTraitMinorSwarm01Title">Swarm Tactics</LocalizationPair>
+  <LocalizationPair Name="%FactionTraitMinorSwarm01_TooltipEffect">15% more Troops on Ground Battle</LocalizationPair>
+
+  <!-- Harmony -->
+  <LocalizationPair Name="%FactionTraitMinorMindOverBodyTooltipEffects">+1 [dustColored] per [population] on Fertile Planets</LocalizationPair>
+
+  <!-- Gnashast -->
+  <LocalizationPair Name="%FactionTraitMinorGnashastTooltipEffects1">+10% to Ground Troop [health]</LocalizationPair>
+  <LocalizationPair Name="%FactionTraitMinorGnashastTooltipEffects2">+10% Ground Troop Damage</LocalizationPair>
+
+  <!-- Z'vali -->
+  <LocalizationPair Name="%GamersBubbleExpansionEffect">+10% Influence radius size</LocalizationPair>
+
+  <!-- Bhagaba -->
+  <LocalizationPair Name="%PopulationModifiersTraitBhagabaInfluenceTitle">Comfortable Loyalty</LocalizationPair>
+  <LocalizationPair Name="%FactionTraitMinorDiplomats01Title">Galaxy-famous Cuisine</LocalizationPair>
+  <LocalizationPair Name="%FactionTraitMinorDiplomats01Description">The Bhagaba introduce methods that coincidentally seem to help with spreading the envy of your delicious and unique food.</LocalizationPair>
+  <LocalizationPair Name="%FactionTraitMinorBhagabaTooltipEffects">0.05 [prestigeColored] per [foodColored] on Systems</LocalizationPair>
+
+  <!-- Xirmisala -->
+  <LocalizationPair Name="%FactionTraitXirmisalaTraitTooltipEffects">0.1 [foodColored] per [scienceColored] on Systems</LocalizationPair>
+  <LocalizationPair Name="%FactionTraitMinorBonusDamageOnAcademyTitle">Dust Attunement</LocalizationPair>
+  <LocalizationPair Name="%FactionTraitMinorBonusDamageOnAcademyDescription">A history of Endless genetic alteration for Dust sensitivity allows the dredging of Dust even on the most lush and verdant planets.</LocalizationPair>
+  <LocalizationPair Name="%FactionTraitMinorBonusContributionToAcademyDescription">Fervent belief in the mission of Isyander and the Lost increases contributions to the Academy by 20%</LocalizationPair>
+
+  <!-- Nakalim -->
+  <LocalizationPair Name="%PopulationCollectionBonusTraitTemplarsTitle">Diligent Collection</LocalizationPair>
+  <LocalizationPair Name="%PopulationCollectionBonusTraitTemplarsDescription">This population focuses on Money and Religious conversion</LocalizationPair>
+
+  <!-- Modules -->
+  <LocalizationPair Name="%ESCMEffectJuggernautEconomicModule1">
++15 [foodcolored] on System
++15 [industrycolored] on System</LocalizationPair>
+  <LocalizationPair Name="%ESCMEffectJuggernautEconomicModule2">
++10 [growthcolored] on System
++10 [industrycolored] on System
+-15% System Improvement [industrycolored] Cost on System</LocalizationPair>
+  
+  <!-- Custom Module -->
+  <LocalizationPair Name="%ModuleSupportCrew-1Title">Troop Irritator</LocalizationPair>
+  <LocalizationPair Name="%%ModuleSupportCrew-1EffectOverride">-75 [manpowerColored]</LocalizationPair>
+  <LocalizationPair Name="%ModuleSupportCrew-1Description">This module, specially made for the Academy and by the Academy, is dedicated to wasting as much space as possible and making your soldiers have a terrible time in their bunkers. This is so effective in fact, that the number of crew that can be stationed in this ship is vastly decreased.</LocalizationPair>
+
+  <!-- Behemoths -->
+  <LocalizationPair Name="%HullJuggernaut01JuggernautsTitle">Behemoth [juggernaut]</LocalizationPair>
+  <LocalizationPair Name="%HullJuggernaut02JuggernautsTitle">Juggernaut [battleship]</LocalizationPair>
+  <LocalizationPair Name="%HullJuggernaut03JuggernautsTitle">Obliterator [obliterator]</LocalizationPair>
+
+  <!-- Faction -->
+  <LocalizationPair Name="%HullSmall01SophonsTitle">Kilo-Class [attacker]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall02SophonsTitle">Deka-Class [support]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall03SophonsTitle">Hecto-Class [colonizer]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall04SophonsTitle">Deci-Class [explorer]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall05SophonsTitle">Hecto-Class [lifeforce]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall06SophonsTitle">Hecto-Class [unfallen]</LocalizationPair>
+  <LocalizationPair Name="%HullMedium01SophonsTitle">Giga-Class [duel]</LocalizationPair>
+  <LocalizationPair Name="%HullMedium02SophonsTitle">Peta-Class [plating]</LocalizationPair>
+  <LocalizationPair Name="%HullLarge01SophonsTitle">Yotta-Class [carrier]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall01CraversTitle">Soldier-Class [attacker]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall02CraversTitle">Worker-Class [support]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall03CraversTitle">Drone-Class [colonizer]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall04CraversTitle">Forager-Class [explorer]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall05CraversTitle">Drone-Class [lifeforce]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall06CraversTitle">Drone-Class [unfallen]</LocalizationPair>
+  <LocalizationPair Name="%HullMedium01CraversTitle">Bishop-Class [duel]</LocalizationPair>
+  <LocalizationPair Name="%HullMedium02CraversTitle">Guard-Class [plating]</LocalizationPair>
+  <LocalizationPair Name="%HullLarge01CraversTitle">Queen-Class [carrier]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall01VampirilisTitle">Sluaym-Class [attacker]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall02VampirilisTitle">Toisam-Class [support]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall03VampirilisTitle">Maium-Class [colonizer]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall04VampirilisTitle">Goaym-Class [explorer]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall04BVampirilisTitle">Craeyl-Class [carrier]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall05VampirilisTitle">Nayium-Class [lifeforce]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall06VampirilisTitle">Maium-Class [unfallen]</LocalizationPair>
+  <LocalizationPair Name="%HullMedium01VampirilisTitle">Jaium-Class [duel]</LocalizationPair>
+  <LocalizationPair Name="%HullMedium02VampirilisTitle">Letum-Class [plating]</LocalizationPair>
+  <LocalizationPair Name="%HullLarge00VampirilisTitle">Halaym-Class [delta]</LocalizationPair>
+  <LocalizationPair Name="%HullLarge01VampirilisTitle">Ortaam-Class [carrier]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall01VenetiansTitle">Velm-Class [attacker]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall02VenetiansTitle">Drev-Class [support]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall03VenetiansTitle">Ordara-Class [colonizer]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall04VenetiansTitle">Arrakyo-Class [explorer]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall05VenetiansTitle">Ordara-Class [lifeforce]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall06VenetiansTitle">Ordara-Class [unfallen]</LocalizationPair>
+  <LocalizationPair Name="%HullMedium01VenetiansTitle">Omokar-Class [duel]</LocalizationPair>
+  <LocalizationPair Name="%HullMedium02VenetiansTitle">Lancellum-Class [plating]</LocalizationPair>
+  <LocalizationPair Name="%HullLarge01VenetiansTitle">Meos-Class [carrier]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall01UnfallenTitle">Thorn-Class [attacker]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall02UnfallenTitle">Loam-Class [support]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall03UnfallenTitle">Pod-Class [colonizer]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall04UnfallenTitle">Heart-Class [explorer]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall05UnfallenTitle">Pod-Class [lifeforce]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall06UnfallenTitle">Vine-Class [unfallen]</LocalizationPair>
+  <LocalizationPair Name="%HullMedium01UnfallenTitle">Fire-Class [duel]</LocalizationPair>
+  <LocalizationPair Name="%HullMedium02UnfallenTitle">Light-Class [plating]</LocalizationPair>
+  <LocalizationPair Name="%HullLarge00UnfallenTitle">Grove-Class [delta]</LocalizationPair>
+  <LocalizationPair Name="%HullLarge01UnfallenTitle">Forest-Class [carrier]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall01TerransTitle">Egezrey-Class [attacker]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall02TerransTitle">Yeranef-Class [support]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall03TerransTitle">Karga-Class [colonizer]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall04TerransTitle">Zolya-Class [explorer]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall05TerransTitle">Karga-Class [lifeforce]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall06TerransTitle">Karga-Class [unfallen]</LocalizationPair>
+  <LocalizationPair Name="%HullMedium01TerransTitle">Sopron-Class [duel]</LocalizationPair>
+  <LocalizationPair Name="%HullMedium02TerransTitle">Sheredyn-Class [plating]</LocalizationPair>
+  <LocalizationPair Name="%HullLarge01TerransTitle">Zelevas-Class [carrier]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall01HoratioTitle">Marchio-Class [attacker]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall02HoratioTitle">Baro-Class [support]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall03HoratioTitle">Cresce-Class [colonizer]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall04HoratioTitle">Coms-Class [explorer]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall05HoratioTitle">Cresce-Class [lifeforce]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall06HoratioTitle">Cresce-Class [unfallen]</LocalizationPair>
+  <LocalizationPair Name="%HullMedium01HoratioTitle">Dux-Class [duel]</LocalizationPair>
+  <LocalizationPair Name="%HullMedium02HoratioTitle">Archidux-Class [plating]</LocalizationPair>
+  <LocalizationPair Name="%HullLarge01HoratioTitle">Imperator-Class [carrier]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall01TimeLordsTitle">Natural-Class [attacker]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall02TimeLordsTitle">Rational-Class [support]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall03TimeLordsTitle">Irrational-Class [colonizer]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall04TimeLordsTitle">Imaginary-Class [explorer]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall05TimeLordsTitle">Irrational-Class [lifeforce]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall06TimeLordsTitle">Irrational-Class [unfallen]</LocalizationPair>
+  <LocalizationPair Name="%HullMedium01TimeLordsTitle">Triangular-Class [duel]</LocalizationPair>
+  <LocalizationPair Name="%HullMedium02TimeLordsTitle">Tetrahedral-Class [plating]</LocalizationPair>
+  <LocalizationPair Name="%HullLarge01TimeLordsTitle">Prime-Class [carrier]</LocalizationPair>
+  <LocalizationPair Name="%HullHeroSmall01explorerTitle">Tamad-Class [admiral]</LocalizationPair>
+  <LocalizationPair Name="%HullHeroSmall02ExplorerTitle">Fedez-Class [level]</LocalizationPair>
+  <LocalizationPair Name="%HullHeroSmall03SupporterTitle">Gatas-Class [corporate]</LocalizationPair>
+  <LocalizationPair Name="%HullHeroSmall04DefenderTitle">Muvel-Class [overseer]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall01MajorHisshosTitle">Claw-Class [attacker]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall02MajorHisshosTitle">Hover-Class [support]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall03MajorHisshosTitle">Roost-Class [colonizer]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall04MajorHisshosTitle">Glide-Class [explorer]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall05MajorHisshosTitle">Sharpbeak-Class [lifeforce]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall06MajorHisshosTitle">Weaver-Class [unfallen]</LocalizationPair>
+  <LocalizationPair Name="%HullMedium01MajorHisshosTitle">Strike-Class [duel]</LocalizationPair>
+  <LocalizationPair Name="%HullMedium02MajorHisshosTitle">Climb-Class [plating]</LocalizationPair>
+  <LocalizationPair Name="%HullLarge01MajorHisshosTitle">Dive-Class [carrier]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall01UmbralChoirTitle">Stanza-Class [attacker]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall02UmbralChoirTitle">Madrigal-Class [support]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall03UmbralChoirTitle">Cantata-Class [colonizer]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall04UmbralChoirTitle">Sonata-Class [explorer]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall05UmbralChoirTitle">Chamber-Class [lifeforce]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall06UmbralChoirTitle">Opera-Class [unfallen]</LocalizationPair>
+  <LocalizationPair Name="%HullMedium01UmbralChoirTitle">Hymn-Class [duel]</LocalizationPair>
+  <LocalizationPair Name="%HullMedium02UmbralChoirTitle">Epic-Class [plating]</LocalizationPair>
+  <LocalizationPair Name="%HullLarge01UmbralChoirTitle">Cycle-Class [carrier]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall01TemplarsTitle">Incantation-Class [attacker]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall02TemplarsTitle">Invitatory-Class [support]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall03TemplarsTitle">Recitation-Class [colonizer]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall04TemplarsTitle">Salutation-Class [explorer]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall05TemplarsTitle">Canticle-Class [lifeforce]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall06TemplarsTitle">Reading-Class [unfallen]</LocalizationPair>
+  <LocalizationPair Name="%HullMedium01TemplarsTitle">Prostration-Class [duel]</LocalizationPair>
+  <LocalizationPair Name="%HullMedium02TemplarsTitle">Psalm-Class [plating]</LocalizationPair>
+  <LocalizationPair Name="%HullLarge01TemplarsTitle">Invocation-Class [carrier]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall01VaultersTitle">Arrow-Class [attacker]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall02VaultersTitle">Bolt-Class [support]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall03VaultersTitle">Barrel-Class [colonizer]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall04VaultersTitle">Dart-Class [explorer]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall05VaultersTitle">Barrel-Class [lifeforce]</LocalizationPair>
+  <LocalizationPair Name="%HullSmall06VaultersTitle">Barrel-Class [unfallen]</LocalizationPair>
+  <LocalizationPair Name="%HullMedium01VaultersTitle">Quarrel-Class [duel]</LocalizationPair>
+  <LocalizationPair Name="%HullMedium02VaultersTitle">Shot-Class [plating]</LocalizationPair>
+  <LocalizationPair Name="%HullLarge01VaultersTitle">Spear-Class [carrier]</LocalizationPair>
+  <LocalizationPair Name="%HullMedium03VaultersTitle">Argosy [supercolonizer]</LocalizationPair>
+
+
+  <!-- Settings -->
+  <!-- Luxury Type Quantities -->
+  <LocalizationPair Name="%SettingLuxuryTypesTitle">Luxury Type Quantity</LocalizationPair>
+  <LocalizationPair Name="%SettingLuxuryTypesDescription">How many types of luxury resources will be placed onto planets.</LocalizationPair>
+  <LocalizationPair Name="%SettingSettingLuxuryTypesLowTitle">Low</LocalizationPair>
+  <LocalizationPair Name="%SettingLuxuryTypesLowDescription">Spawns 4 common luxuries, 2 uncommon, and 2 rare. Automatically reveals 2 types of luxuries.</LocalizationPair>
+  <LocalizationPair Name="%SettingSettingLuxuryTypesMediumTitle">Medium</LocalizationPair>
+  <LocalizationPair Name="%SettingLuxuryTypesMediumDescription">Spawns 6 common luxuries, 3 uncommon, and 3 rare. Automatically reveals 5 types of luxuries.</LocalizationPair>
+  <LocalizationPair Name="%SettingSettingLuxuryTypesHighTitle">High</LocalizationPair>
+  <LocalizationPair Name="%SettingLuxuryTypesHighDescription">Spawns 8 common luxuries, 4 uncommon, and 4 rare. Automatically reveals 8 types of luxuries.</LocalizationPair>
+  <LocalizationPair Name="%SettingSettingLuxuryTypesAllTitle">All</LocalizationPair>
+  <LocalizationPair Name="%SettingLuxuryTypesAllDescription">
+Spawns 8 common luxuries, 8 uncommon, and 8 rare. Automatically reveals 10 types of luxuries.
+#FF0000#May cause world generation errors, be careful.#REVERT#</LocalizationPair>
+
+  <!-- Animation Speed -->
+  <LocalizationPair Name="%SettingAnimationSpeedMultiplier8Title">Fasterest (8x)</LocalizationPair>
+  <LocalizationPair Name="%SettingAnimationSpeedMultiplier8Description">The animations will be played 8 times faster.</LocalizationPair>
+  <LocalizationPair Name="%SettingAnimationSpeedMultiplier16Title">Fastestest (16x)</LocalizationPair>
+  <LocalizationPair Name="%SettingAnimationSpeedMultiplier16Description">
+The animations will be played 16 times faster.
+#6F737A#"I have a feeling that when I turn that on I'll never be able to turn it off" - ANGRYABOUTELVES#REVERT#</LocalizationPair>
+
+  <!-- Game Time Limit -->
+  <LocalizationPair Name="%SettingEndTurnTimerGlobalDuration1800Title">30 minutes</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerGlobalDuration1800Description">30 minutes</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerGlobalDuration3600Title">1 hour</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerGlobalDuration3600Description">1 hour</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerGlobalDuration7200Title">2 hours</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerGlobalDuration7200Description">2 hours</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerGlobalDuration21600Title">6 hours</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerGlobalDuration21600Description">6 hours</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerGlobalDuration25200Title">7 hours</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerGlobalDuration25200Description">7 hours</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerGlobalDuration28800Title">8 hours</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerGlobalDuration28800Description">8 hours</LocalizationPair>
+
+  <!-- End Turn Limit -->
+  <LocalizationPair Name="%SettingEndTurnTimerDuration360Title">360 seconds</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerDuration360Description">360 seconds</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerDuration720Title">720 seconds</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerDuration720Description">360 seconds</LocalizationPair>
+
+  <!-- Extra Time per Era -->
+  <LocalizationPair Name="%SettingEndTurnTimerEraAdditionalDuration120Title">120 seconds</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerEraAdditionalDuration120Description">120 seconds</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerEraAdditionalDuration180Title">180 seconds</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerEraAdditionalDuration180Description">180 seconds</LocalizationPair>
+
+  <!-- Extra Time per System -->
+  <LocalizationPair Name="%SettingEndTurnTimerSystemAdditionalDuration40Title">40 seconds</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerSystemAdditionalDuration40Description">40 seconds</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerSystemAdditionalDuration50Title">50 seconds</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerSystemAdditionalDuration50Description">50 seconds</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerSystemAdditionalDuration60Title">1 minute</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerSystemAdditionalDuration60Description">1 minute</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerSystemAdditionalDuration120Title">2 minutes</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerSystemAdditionalDuration120Description">2 minutes</LocalizationPair>
+
+  <!-- Overtime -->
+  <LocalizationPair Name="%SettingMaxOvertime15Title">15 seconds</LocalizationPair>
+  <LocalizationPair Name="%SettingMaxOvertime15Description">15 seconds</LocalizationPair>
+  <LocalizationPair Name="%SettingMaxOvertime30Title">30 seconds</LocalizationPair>
+  <LocalizationPair Name="%SettingMaxOvertime30Description">30 seconds</LocalizationPair>
+  <LocalizationPair Name="%SettingMaxOvertime360Title">6 minutes</LocalizationPair>
+  <LocalizationPair Name="%SettingMaxOvertime360Description">6 minutes</LocalizationPair>
+  <LocalizationPair Name="%SettingMaxOvertime480Title">8 minutes</LocalizationPair>
+  <LocalizationPair Name="%SettingMaxOvertime480Description">8 minutes</LocalizationPair>
+  <LocalizationPair Name="%SettingMaxOvertime720Title">12 minutes</LocalizationPair>
+  <LocalizationPair Name="%SettingMaxOvertime720Description">12 minutes</LocalizationPair>
+
+  <!-- Extra Time if Last Player -->
+  <LocalizationPair Name="%SettingEndTurnTimerLastPlayerDuration0Title">0 seconds</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerLastPlayerDuration0Description">No bonus</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerLastPlayerDuration10Title">10 seconds</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerLastPlayerDuration10Description">10 seconds</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerLastPlayerDuration120Title">2 minutes</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerLastPlayerDuration120Description">2 minutes</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerLastPlayerDuration180Title">3 minutes</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerLastPlayerDuration180Description">3 minutes</LocalizationPair>
+
+  <!-- Autostart Battle Timer -->
+  <LocalizationPair Name="%SettingBattleAutoStartTimerDuration45Title">45 seconds</LocalizationPair>
+  <LocalizationPair Name="%SettingBattleAutoStartTimerDuration45Description">45 seconds</LocalizationPair>
+  <LocalizationPair Name="%SettingBattleAutoStartTimerDuration60Title">1 minute</LocalizationPair>
+  <LocalizationPair Name="%SettingBattleAutoStartTimerDuration60Description">1 minute</LocalizationPair>
+  <LocalizationPair Name="%SettingBattleAutoStartTimerDuration120Title">2 minutes</LocalizationPair>
+  <LocalizationPair Name="%SettingBattleAutoStartTimerDuration120Description">2 minutes</LocalizationPair>
+  <LocalizationPair Name="%SettingBattleAutoStartTimerDuration180Title">3 minutes</LocalizationPair>
+  <LocalizationPair Name="%SettingBattleAutoStartTimerDuration180Description">3 minutes</LocalizationPair>
+  <LocalizationPair Name="%SettingBattleAutoStartTimerDuration240Title">4 minutes</LocalizationPair>
+  <LocalizationPair Name="%SettingBattleAutoStartTimerDuration240Description">4 minutes</LocalizationPair>
+
+  <!-- Autostart Hacking Outcome Timer -->
+  <LocalizationPair Name="%SettingHackingOutcomeTimerDuration60Title">1 minute</LocalizationPair>
+  <LocalizationPair Name="%SettingHackingOutcomeTimerDuration60Description">1 minute</LocalizationPair>
+  <LocalizationPair Name="%SettingHackingOutcomeTimerDuration120Title">2 minutes</LocalizationPair>
+  <LocalizationPair Name="%SettingHackingOutcomeTimerDuration120Description">2 minutes</LocalizationPair>
+  <LocalizationPair Name="%SettingHackingOutcomeTimerDuration180Title">3 minutes</LocalizationPair>
+  <LocalizationPair Name="%SettingHackingOutcomeTimerDuration180Description">3 minutes</LocalizationPair>
+  <LocalizationPair Name="%SettingHackingOutcomeTimerDuration240Title">4 minutes</LocalizationPair>
+  <LocalizationPair Name="%SettingHackingOutcomeTimerDuration240Description">4 minutes</LocalizationPair>
+
+  <!-- Minor Factions Quantity -->
+  <LocalizationPair Name="%SettingMinorFactionsQuantityTitle">Minor Factions per Player</LocalizationPair>
+  <LocalizationPair Name="%SettingMinorFactionsQuantityDescription">Ideal quantity of Minor Civilizations per Player in the Systems you explore</LocalizationPair>
+  <LocalizationPair Name="%SettingMinorFactionsQuantity0Title">0</LocalizationPair>
+  <LocalizationPair Name="%SettingMinorFactionsQuantity0Description">No minor factions will be generated
+#FF0000#Will break certain faction quests and render some faction's traits useless#REVERT#</LocalizationPair>
+  <LocalizationPair Name="%SettingMinorFactionsQuantity1Title">1</LocalizationPair>
+  <LocalizationPair Name="%SettingMinorFactionsQuantity1Description">The game will try to generate 1 minor faction per player</LocalizationPair>
+  <LocalizationPair Name="%SettingMinorFactionsQuantity2Title">2</LocalizationPair>
+  <LocalizationPair Name="%SettingMinorFactionsQuantity2Description">The game will try to generate 2 minor faction per player</LocalizationPair>
+  <LocalizationPair Name="%SettingMinorFactionsQuantity3Title">3</LocalizationPair>
+  <LocalizationPair Name="%SettingMinorFactionsQuantity3Description">The game will try to generate 3 minor faction per player</LocalizationPair>
+  <LocalizationPair Name="%SettingMinorFactionsQuantity4Title">4</LocalizationPair>
+  <LocalizationPair Name="%SettingMinorFactionsQuantity4Description">The game will try to generate 4 minor faction per player</LocalizationPair>
+  <LocalizationPair Name="%SettingMinorFactionsQuantity5Title">5</LocalizationPair>
+  <LocalizationPair Name="%SettingMinorFactionsQuantity5Description">The game will try to generate 5 minor faction per player</LocalizationPair>
+  <LocalizationPair Name="%SettingMinorFactionsQuantity6Title">6</LocalizationPair>
+  <LocalizationPair Name="%SettingMinorFactionsQuantity6Description">The game will try to generate 6 minor faction per player</LocalizationPair>
+  <LocalizationPair Name="%SettingMinorFactionsQuantity7Title">7</LocalizationPair>
+  <LocalizationPair Name="%SettingMinorFactionsQuantity7Description">The game will try to generate 7 minor faction per player</LocalizationPair>
+  <LocalizationPair Name="%SettingMinorFactionsQuantity8Title">8</LocalizationPair>
+  <LocalizationPair Name="%SettingMinorFactionsQuantity8Description">The game will try to generate 8 minor faction per player</LocalizationPair>
+  
+  <!-- Allow PVP Hacking -->
+  <LocalizationPair Name="%SettingAllowPVPHackingTitle">Allow PVP Hacking</LocalizationPair>
+  <LocalizationPair Name="%SettingAllowPVPHackingDescription">Disables Hacking choices that directly interfere with other players.</LocalizationPair>
+  <LocalizationPair Name="%SettingAllowPVPHackingTrueTitle">True</LocalizationPair>
+  <LocalizationPair Name="%SettingAllowPVPHackingTrueDescription">True</LocalizationPair>
+  <LocalizationPair Name="%SettingAllowPVPHackingFalseTitle">False</LocalizationPair>
+  <LocalizationPair Name="%SettingAllowPVPHackingFalseDescription">False</LocalizationPair>
+
+  <!-- Allow Academy Expansion -->
+  <LocalizationPair Name="%SettingAllowAcademyExpansionTitle">Allow Academy Expansion</LocalizationPair>
+  <LocalizationPair Name="%SettingAllowAcademyExpansionDescription">Disables the Academy being able to expand on its own, the Nakalim may still donate to it.</LocalizationPair>
+  <LocalizationPair Name="%SettingAllowAcademyExpansionTrueTitle">True</LocalizationPair>
+  <LocalizationPair Name="%SettingAllowAcademyExpansionTrueDescription">True</LocalizationPair>
+  <LocalizationPair Name="%SettingAllowAcademyExpansionFalseTitle">False</LocalizationPair>
+  <LocalizationPair Name="%SettingAllowAcademyExpansionFalseDescription">False</LocalizationPair>
+  
+  <!-- Academy Role Descriptions -->
+  <LocalizationPair Name="%AcademyRoleLibrarianDescription">With access to both ancient and recent studies and data, the Librarian can find answers to difficult questions, discover advanced technologies, and highly effectively infiltrate networks.</LocalizationPair>
+  <LocalizationPair Name="%AcademyRoleLibrarianEffectOverride">The Librarian can access hidden information only available to the Academy, such as data on the state of heroes and other empires, critical hacking vulnerabilities in network protocols, and a cache of scientific information enabling the research of technologies one stage higher than normal.</LocalizationPair>
+  <LocalizationPair Name="%AcademyRoleMasterOfDustDescription">The Master of Dust holds the keys to the Academy's vaults--within limits, of course--and can use this wealth to affect diplomatic actions. The Master of Dust also gains the Academy's support when dealing in trade and diplomacy, allowing free trade deals and the imposing of peaceful relations on otherwise intractable empires.</LocalizationPair>
+  <LocalizationPair Name="%AcademyRoleMasterOfDustEffectOverride">The Master of Dust can make grants with the Academy's funds, and has access to the Academy's extensive business communications network and contacts making all trade deals effectively free and enabling them to force peaceful relations.</LocalizationPair>
+  
+  <!-- Spelling fixes -->
+  <LocalizationPair Name="%DiplomaticInteractionAppeasementForcedPeaceFromColdWarAfraidVaulters">I expected  fleets of ships, not an offer of peace. I will not hide the Aurigans' feeling of relief.</LocalizationPair>
+  <LocalizationPair Name="%TechnologyDefinitionEmpireDevelopment13Description">The construction of nano-machines--or nanites--capable of operating in liquid environments with various conditions of salinity, temperature, pressure, and microbial life has a range of potential applications. Research into energy sources, locomotion, and self-repair enables a whole ecology of these liquid nanites to be developed.</LocalizationPair>
+  <LocalizationPair Name="%TechnologyDefinitionEmpireDevelopment13VampirilisTitle">Nano Aquaculture</LocalizationPair>
+  <LocalizationPair Name="%TechnologyDefinitionEmpireDevelopment13VampirilisDescription">The construction of Church approved nano-machines--or nanites--capable of operating in liquid environments with various conditions of salinity, temperature, pressure, and microbial life has a range of potential applications. Research into energy sources, locomotion, and self-repair enables a whole ecology of these liquid nanites to be developed.</LocalizationPair>
+</Datatable>

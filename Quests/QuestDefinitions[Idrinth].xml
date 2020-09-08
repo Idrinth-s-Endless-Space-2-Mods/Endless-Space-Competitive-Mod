@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/QuestDefinition.xsd">
+  <QuestDefinition Name="Quest-AllowAcademyExpansion" Category="Start" SubCategory="Regular" TriggeringProbability="1" MinimumTurn="1">
+    <Tags>BeginTurn,Hidden</Tags>
+    <QuestContextSolo/>
+    <RepetitionRules NumberOfOccurrencesPerGame="1"/>
+    <Vars>
+      <Var VarName="$Effect" StringValue="AcademyExpansionDisabled"/>
+      <Var VarName="$CurrentEmpire">
+        <From Source="$Empires">
+          <Where>
+            <PathPrerequisite Flags="Prerequisite">ClassEmpire,IsAcademyFaction</PathPrerequisite>
+          </Where>
+        </From>
+      </Var>
+    </Vars>
+    <Prerequisites>
+      <GameSettingPrerequisite Flags="Prerequisite">AllowAcademyExpansion,True</GameSettingPrerequisite>
+      </Prerequisites>
+    <Steps>
+      <Step Name="Step1">
+        <ObjectiveSet>
+          <Objective Name="Step1Objective1">
+            <Sequence>
+              <Action_ApplyDescriptor LogAction="true">
+                <Input_DescriptorName VarName="$Effect"/>
+                <Input_Targets VarName="$CurrentEmpire"/>
+              </Action_ApplyDescriptor>
+            </Sequence>
+          </Objective>
+        </ObjectiveSet>
+      </Step>
+    </Steps>
+    </QuestDefinition>
+  </Datatable>

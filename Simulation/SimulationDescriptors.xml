@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+  <SimulationDescriptor Name="AcademyRoleLibrarian" Type="AcademyRole">
+    <Modifier TargetProperty="TechnologyQuadrantEmpireDevelopmentVirtualStageNumber"        Operation="Addition"    Value="1"   Path="../ClassEmpire/ClassResearch"     TooltipHidden="true"/>
+    <Modifier TargetProperty="TechnologyQuadrantScienceAndExplorationVirtualStageNumber"    Operation="Addition"    Value="1"   Path="../ClassEmpire/ClassResearch"     TooltipHidden="true"/>
+    <Modifier TargetProperty="TechnologyQuadrantEconomyAndTradeVirtualStageNumber"          Operation="Addition"    Value="1"   Path="../ClassEmpire/ClassResearch"     TooltipHidden="true"/>
+    <Modifier TargetProperty="TechnologyQuadrantMilitaryVirtualStageNumber"                 Operation="Addition"    Value="1"   Path="../ClassEmpire/ClassResearch"     TooltipHidden="true"/>
+    <Modifier TargetProperty="HackingWarpSpeed"				Operation="Percent"						Value="1"			Path="../ClassEmpire" TooltipHidden="true" />
+    <Modifier TargetProperty="HackingNonWarpSpeed"		Operation="Percent"						Value="1"			Path="../ClassEmpire" TooltipHidden="true" />
+    <Modifier TargetProperty="HackingNodeSpeed"				Operation="Percent"						Value="1"			Path="../ClassEmpire" TooltipHidden="true"/>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="AcademyRoleMasterOfDust" Type="AcademyRole">
+    <Modifier TargetProperty="TradeAgreementCost"          Operation="Addition"        Value="-2"     Path="../ClassEmpire" TooltipHidden="true"/>
+    <Modifier TargetProperty="TradeAgreementCost"          Operation="Addition"        Value="-2"     Path="../ClassEmpire/ClassDiplomacy/ClassDiplomaticEmpire" Priority="1" TooltipHidden="true"/>
+  </SimulationDescriptor>
+</Datatable>

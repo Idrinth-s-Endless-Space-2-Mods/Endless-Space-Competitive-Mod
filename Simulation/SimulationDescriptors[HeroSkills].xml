@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+  <!--HeroSkill75-->
+  <SimulationDescriptor Name="HeroSkillSystem75_Industry_PerAnomaly_0" Type="HeroSkillSystem" IsSerializable="false">
+    <BinaryModifier TargetProperty="SystemProduction" Operation="Addition" Left="10" BinaryOperation="Multiplication" Right="$(AnomalyCount)" SearchValueFromPath="true" Path="ClassColonizedStarSystem" TooltipOverride="%HeroSkill75_Industry_PerAnomaly_EffectOverride"/>
+    <!-- FEEDBACK FOR SCAN VIEW -->
+    <BinaryModifier TargetProperty="BonusHeroSystemIndustry"  Operation="Addition" Left="10" BinaryOperation="Multiplication" Right="$(AnomalyCount)" SearchValueFromPath="true" Path="ClassColonizedStarSystem" TooltipHidden="true"/>
+  </SimulationDescriptor>
+  <SimulationDescriptor Name="HeroSkillSystem75_Industry_PerAnomaly_4" Type="HeroSkillSystem" IsSerializable="false">
+    <BinaryModifier TargetProperty="SystemProduction" Operation="Addition" Left="50" BinaryOperation="Multiplication" Right="$(AnomalyCount)" SearchValueFromPath="true" Path="ClassColonizedStarSystem" />
+    <!-- FEEDBACK FOR SCAN VIEW -->
+    <BinaryModifier TargetProperty="BonusHeroSystemIndustry"  Operation="Addition" Left="50" BinaryOperation="Multiplication" Right="$(AnomalyCount)" SearchValueFromPath="true" Path="ClassColonizedStarSystem" TooltipHidden="true"/>
+  </SimulationDescriptor>
+  <SimulationDescriptor Name="HeroSkillSenator75_Industry_PerAnomaly_4" Type="HeroSkillSenator" IsSerializable="false">
+    <Property Name="DictatorshipBonus" BaseValue="-1" MinValue="Negative"/>
+    <!--Base Effect-->
+    <BinaryModifier TargetProperty="SystemProduction"   Operation="Addition" Left="10" BinaryOperation="Multiplication" Right="$(AnomalyCount)" SearchValueFromPath="true" Path="../ClassEmpire/ClassColonizedStarSystem" TooltipOverride="%HeroSkill75_SenateIndustry_PerAnomaly_EffectOverride"/>
+    <!--Dictatorship Bonus-->
+    <Modifier TargetProperty="DictatorshipBonus"        Operation="Addition" Value="$(SenatorSkillEffectDictatorshipMultiplier)" TooltipHidden="true"/>
+    <BinaryModifier TargetProperty="SystemProduction"   Operation="Addition" Left="10" BinaryOperation="Multiplication" Right="$(SenatorSkillEffectDictatorshipMultiplier)" Path="../ClassEmpire/ClassColonizedStarSystem" TooltipHidden="true"/>
+    <!-- FEEDBACK FOR SCAN VIEW -->
+    <BinaryModifier TargetProperty="BonusHeroSystemIndustry"  Operation="Addition" Left="10" BinaryOperation="Multiplication" Right="$(AnomalyCount)" SearchValueFromPath="true"    Path="../ClassEmpire/ClassColonizedStarSystem" TooltipHidden="true"/>
+    <BinaryModifier TargetProperty="BonusHeroSystemIndustry"  Operation="Addition" Left="10" BinaryOperation="Multiplication" Right="$(SenatorSkillEffectDictatorshipMultiplier)"   Path="../ClassEmpire/ClassColonizedStarSystem" TooltipHidden="true"/>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="HeroSkillSystem91_Science_PerAnomalyFlat_2" Type="HeroSkillSystem" IsSerializable="false">
+    <Modifier       TargetProperty="SystemResearch"		Operation="Addition"		Value="20"		Path="ClassColonizedStarSystem" />
+    <Modifier       TargetProperty="SystemResearch"	    Operation="Addition"	    Value="20"		Path="../ClassEmpire,AffinityGameplayUmbralChoir/ClassColonizedStarSystem,ColonizedStarSystemStateGhost" TooltipHiddenIfPathInvalid="true"/>
+    <BinaryModifier TargetProperty="SystemResearch"     Operation="Addition"        Left="20" BinaryOperation="Multiplication" Right="$(AnomalyCount)" SearchValueFromPath="true" Path="ClassColonizedStarSystem" TooltipOverride="%HeroSkill91_Science_PerAnomalyFlat_EffectOverride"/>
+    <!-- FEEDBACK FOR SCAN VIEW -->
+    <Modifier TargetProperty="BonusHeroSystemScience"									Operation="Addition"			Value="20"			Path="ClassColonizedStarSystem" TooltipHidden="true" />
+    <BinaryModifier TargetProperty="BonusHeroSystemScience" Operation="Addition" Left="20" BinaryOperation="Multiplication" Right="$(AnomalyCount)" SearchValueFromPath="true" Path="ClassColonizedStarSystem" TooltipHidden="true" />
+  </SimulationDescriptor>
+</Datatable>

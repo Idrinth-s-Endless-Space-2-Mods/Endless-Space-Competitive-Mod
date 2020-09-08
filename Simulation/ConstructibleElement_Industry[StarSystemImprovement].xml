@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/IndustryConstructibleElement.xsd">
+  <!-- Denarque University -->
+  <StarSystemImprovementDefinition Name="StarSystemImprovementUniqueStartingImprovement"  Category="CategoryStarSystemImprovementUnique" SubCategory="SubCategoryFIDSI" ScoreProvider="StarSystemImprovementBuilt">
+    <SupervisorGain Name="Food" />
+    <SupervisorGain Name="Industry" />
+    <SupervisorGain Name="Science" />
+    <SupervisorGain Name="Dust" />
+    <SupervisorGain Name="Prestige" />
+    <SupervisorGain Name="Approval" />
+    <QueuedSimulationDescriptorReference Name="BuildingStarSystemImprovementUniqueStartingImprovement"/>
+    <Cost ResourceName="SystemProduction">1040</Cost>
+    <Cost ResourceName="Strategic1" Instant="true">5</Cost>
+    <Cost ResourceName="Strategic2" Instant="true">5</Cost>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard">TechnologyDiplomacy1</TechnologyPrerequisite>
+    <PathPrerequisite        Inverted="false"   Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
+    <PathPrerequisite        Inverted="true"    Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementUniqueStartingImprovement,!FastForwardedImprovement</PathPrerequisite>
+    <PathPrerequisite        Inverted="true"    Flags="Prerequisite,Discard">../ClassEmpire/Uniques,StarSystemImprovementUniqueStartingImprovement</PathPrerequisite>
+    <PathPrerequisite        Inverted="true"    Flags="Prerequisite,Discard,UnlockAvailability,Faction,AffinityGameplayTechnologyMajorHisshos">../ClassEmpire,AffinityGameplayMajorHisshos</PathPrerequisite>
+    <InterpreterPrerequisite Inverted="true"    Flags="Prerequisite,Discard">Path(Context,@'../ClassEmpire/ClassStarSystem,BuildingStarSystemImprovementUniqueStartingImprovement') and not(Path(Context,@'ClassStarSystem,BuildingStarSystemImprovementUniqueStartingImprovement'))</InterpreterPrerequisite>
+    <SimulationDescriptorReference Name="StarSystemImprovementUniqueStartingImprovement" />
+    <SimulationDescriptorReference Name="StarSystemImprovementUpkeepStage3High" />
+    <SimulationDescriptorReference Name="StarSystemImprovementOncePerEmpire" />
+    <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionDenarqueUniversity"/>
+    <UniqueTags>StarSystemImprovementUniqueStartingImprovement</UniqueTags>
+  </StarSystemImprovementDefinition>
+
+  <StarSystemImprovementDefinition Name="StarSystemImprovementUniqueStartingImprovementMajorHissho"  Category="CategoryStarSystemImprovementUnique" SubCategory="SubCategoryFIDSI" ScoreProvider="StarSystemImprovementBuilt">
+    <SupervisorGain Name="Food" />
+    <SupervisorGain Name="Industry" />
+    <SupervisorGain Name="Science" />
+    <SupervisorGain Name="Dust" />
+    <SupervisorGain Name="Prestige" />
+    <SupervisorGain Name="Approval" />
+    <QueuedSimulationDescriptorReference Name="BuildingStarSystemImprovementUniqueStartingImprovement"/>
+    <Cost ResourceName="SystemProduction">1040</Cost>
+    <Cost ResourceName="Strategic1" Instant="true">5</Cost>
+    <Cost ResourceName="Strategic2" Instant="true">5</Cost>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard">TechnologyDiplomacy1</TechnologyPrerequisite>
+    <PathPrerequisite        Inverted="false"   Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
+    <PathPrerequisite        Inverted="true"    Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementUniqueStartingImprovement,!FastForwardedImprovement</PathPrerequisite>
+    <PathPrerequisite        Inverted="true"    Flags="Prerequisite,Discard">../ClassEmpire/Uniques,StarSystemImprovementUniqueStartingImprovement</PathPrerequisite>
+    <PathPrerequisite        Inverted="false"   Flags="Prerequisite,Discard,UnlockAvailability,Faction,AffinityGameplayTechnologyMajorHisshos">../ClassEmpire,AffinityGameplayMajorHisshos</PathPrerequisite>
+    <InterpreterPrerequisite Inverted="true"    Flags="Prerequisite,Discard">Path(Context,@'../ClassEmpire/ClassStarSystem,BuildingStarSystemImprovementUniqueStartingImprovement') and not(Path(Context,@'ClassStarSystem,BuildingStarSystemImprovementUniqueStartingImprovement'))</InterpreterPrerequisite>
+    <SimulationDescriptorReference Name="StarSystemImprovementUniqueStartingImprovementMajorHissho" />
+    <SimulationDescriptorReference Name="StarSystemImprovementUpkeepStage3High" />
+    <SimulationDescriptorReference Name="StarSystemImprovementOncePerEmpire" />
+    <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionDenarqueUniversity"/>
+    <UniqueTags>StarSystemImprovementUniqueStartingImprovement</UniqueTags>
+  </StarSystemImprovementDefinition>
+</Datatable>

@@ -1,0 +1,305 @@
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="Documentation/Schemas/Amplitude.Unity.Runtime.RuntimeModule.xsd">
+  <RuntimeModule Name="ESCM" Type="Extension" Version="1.1">
+    <Title>ESG Competitive Balance Mod</Title>
+    <Description>This mod is the official balance mod for the Endless Space Gaming Discord channel.
+Check the full list of changes: https://docs.google.com/spreadsheets/d/1dt5JazAZM7FHv6K1XSJplU8Wpt7T9EA490hhlcP1Ihc/edit#gid=0
+Join ESG: https://discord.gg/eAfNtB3
+
+Overview
+
+Spear of Isyander
+
+The ships of the Spear and all Academy ships in general now have obvious crippling weaknesses. They have no plating defense and no kinetic slugs, as well as mounting bombers and bomber-boosting modules instead of guns in some slots. This makes them very weak to small attacker missile spam, while the bombers let them still be somewhat useful through midgame. The Spear should be killable while alone if you counter-build it, while still being useful if you bring your own military along.
+
+Behemoths
+
+Economic Behemoth modules have been reworked. They no longer provide any Science or Dust, but increased flat Food and Industry bonuses. The upgraded module no longer provides any FIDS percentage bonuses, instead providing -15% industry cost on structures. This stacks up to -75%, and does not affect Wonders. This should make the use of Economic Behemoths more interesting, as they make setting up new colonies very quick, but you have to move them to the frontier thus exposing them to attack. If you leave them sitting on your home system, they quickly stop being useful.
+
+Military Behemoths now have targeting weights and the Focus trait, and all Behemoths are now stackable within fleets. They will now focus-fire with the rest of your fleet rather than spreading their fire randomly across the whole enemy fleet, and be properly targeted by the enemy while within a fleet. This should make them quite a bit more useful. Ion Wave now costs 25 of each tier 2 and tier 3 strategic resource to fire, as Juggernauts are now actually useful for their guns and because you're generally using Ion Wave to kill strategic-equipped fleets, so a small strategic cost is appropriate.
+
+Factions
+
+Many terrible factions have been buffed, overpowered factions have been nerfed, and certain specific problems have been fixed. Vodyani Leeching modules other than the starting ones have been nerfed, to reduce their explosive rate of expansion past early-game. Hissho mining probes other than the starting ones have had their FIDS percentages significantly reduced. Lumeris have recieved a series of buffs and cost reductions, as well as Trade Companies in general being significantly buffed. Horatio's starting planet now provides an additional +5 industry per pop so he can actually build things earlygame, and he starts with Pulsos and Bhagaba minor faction pops instead of Zvali. Unfallen Vineships have been buffed in several ways, and their Scouts have an additional support slot for another engine or probe so they can more easily find other factions to make peace with. Umbral Choir's Burning Metal law has been whacked with the nerfbat to make it harder to break the hacking game with obscene amounts of hacking speed from backdoors.
+
+Many other minor balance issues have been at least somewhat addressed, including many useless minor faction traits being buffed and Trade/Science aggreements now costing a flat 50 influence per turn instead of 2 influence per pop.
+
+Thank you to Koxsos, Simpletonant, Idrinth, and everyone else who offered ideas and feedback, but especially to Captain Cobbs as he did all of the actual coding.</Description>
+    <Author>Endless Space Gaming</Author>
+    <Homepage></Homepage>
+    <PreviewImageFile>ModIcon.png</PreviewImageFile>
+    <ReleaseNotes>Academy and Custom Faction Rework (1.1)</ReleaseNotes>
+    <Tags>Balance</Tags>
+    <Plugins>
+      <!-- Community Map
+      > Documentation -> List of Plugins
+      > GUI           -> Linking a simulation object, localization pair, (potentially) an image, and GUI object together
+      > Localization  -> Translation pairs
+      > Settings      -> Things that mess with world / game settings
+      > Simulation    -> Technologies, Values, System Improvements, and Button Behaviours
+      >> Battles      -> Hull / Ship Designs/Roles, Ship Stats, Module Stats
+      Registry.xml    -> Max Faction Traits, More Market Purchases, Pirate Spawn Messing
+      ModIcon.png     -> It's the mod icon dummy, what do you think it is
+      ESCM.xml        -> This is the main mod file, it sets the mod metadata and loads the plugins that deal with the mod contents
+      -->
+      <!-- Registry -->
+      <RegistryPlugin>
+        <FilePath>Registry.xml</FilePath>
+      </RegistryPlugin>
+
+      <!-- Entity Actions -->
+      <DatabasePlugin DataType="EntityActionDefinition, Assembly-CSharp">
+        <ExtraTypes>
+          <ExtraType DataType="EmpireDiplomacyGiveResourcesActionDefinition, Assembly-CSharp" />
+          <ExtraType DataType="FireIonWaveFleetActionDefinition, Assembly-CSharp" />
+        </ExtraTypes>
+        <FilePath>Simulation/EntityActions.xml</FilePath>
+      </DatabasePlugin>
+
+      <!-- Diplomacy -->
+      <DatabasePlugin DataType="ForeignAffairsConstructibleElement, Assembly-CSharp">
+        <ExtraTypes>
+          <ExtraType DataType="DiplomaticTermDefinition, Assembly-CSharp" />
+          <ExtraType DataType="DiplomaticTermDiplomaticRelationStateDefinition, Assembly-CSharp" />
+          <ExtraType DataType="DiplomaticTermResourceExchangeDefinition, Assembly-CSharp" />
+          <ExtraType DataType="DiplomaticTermTechnologyExchangeDefinition, Assembly-CSharp" />
+          <ExtraType DataType="DiplomaticTermStarSystemColonyExchangeDefinition, Assembly-CSharp" />
+          <ExtraType DataType="DiplomaticTermStarSystemOutpostExchangeDefinition, Assembly-CSharp" />
+          <ExtraType DataType="DiplomaticTermAllianceDefinition, Assembly-CSharp" />
+          <ExtraType DataType="DiplomaticTermBreakAllianceDefinition, Assembly-CSharp" />
+          <ExtraType DataType="DiplomaticTermProposalDefinition, Assembly-CSharp" />
+          <ExtraType DataType="DiplomaticTermDeclareWarDefinition, Assembly-CSharp" />
+          <ExtraType DataType="DiplomaticTermPressureReductionDefinition, Assembly-CSharp" />
+          <ExtraType DataType="DiplomaticTermResourceExchangeDemandDefinition, Assembly-CSharp" />
+          <ExtraType DataType="DiplomaticTermTechnologyExchangeDemandDefinition, Assembly-CSharp" />
+          <ExtraType DataType="DiplomaticTermMapSharingDefinition, Assembly-CSharp" />
+          <ExtraType DataType="DiplomaticTermPressureEffectDefinition, Assembly-CSharp" />
+          <ExtraType DataType="DiplomaticTermPressureIncreaseDefinition, Assembly-CSharp" />
+          <ExtraType DataType="DiplomaticTermFactionPactDefinition, Assembly-CSharp" />
+          <ExtraType DataType="DiplomaticTermRenounceAllianceDefinition, Assembly-CSharp" />
+        </ExtraTypes>
+        <FilePath>Diplomacy/ForeignAffairsConstructibles.xml</FilePath>
+      </DatabasePlugin>
+      
+      <!-- Simulation -->
+      <DatabasePlugin DataType="Amplitude.Unity.Simulation.SimulationDescriptor, Assembly-CSharp-firstpass">
+        <FilePath>Simulation/SimulationDescriptors[*].xml</FilePath>
+        <FilePath>Simulation/SimulationDescriptors.xml</FilePath>
+        <FilePath>Simulation/Battles/SimulationDescriptors[*].xml</FilePath>
+        <FilePath>AllTheTraits/SimulationDescriptors[*].xml</FilePath>
+      </DatabasePlugin>
+
+      <!-- Population -->
+      <DatabasePlugin DataType="PopulationDefinition, Assembly-CSharp">
+        <FilePath>Simulation/PopulationDefinitions.xml</FilePath>
+        <FilePath>Simulation/PopulationDefinitions[*].xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="PopulationTrait, Assembly-CSharp">
+        <ExtraTypes>
+          <ExtraType DataType="PopulationCollectionBonusTrait, Assembly-CSharp"/>
+        </ExtraTypes>
+        <FilePath>AllTheTraits/PopulationModifiersTraits[*].xml</FilePath>
+        <FilePath>Simulation/PopulationCollectionBonusTraits.xml</FilePath>
+        <FilePath>Simulation/PopulationCollectionBonusTraits[*].xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="PopulationCollectionBonusTrait, Assembly-CSharp">
+        <FilePath>Simulation/PopulationCollectionBonusTraits.xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="PopulationModifiersTrait, Assembly-CSharp">
+        <FilePath>AllTheTraits/PopulationModifiersTraits[*].xml</FilePath>
+      </DatabasePlugin>
+
+      <!-- Ship Design, Ship Roll, Hulls -->
+      <DatabasePlugin DataType="ShipDesignDefinition, Assembly-CSharp">
+        <FilePath>Simulation/Battles/ShipDesignDefinitions.xml</FilePath>
+        <FilePath>Simulation/Battles/ShipDesignDefinitions[*].xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="ShipRoleDefinition, Assembly-CSharp">
+        <FilePath>Simulation/Battles/ShipRoleDefinitions[*].xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="HullDefinition, Assembly-CSharp">
+        <FilePath>Simulation/Battles/HullDefinitions[*].xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="ModuleDefinition, Assembly-CSharp" Priority="10">
+        <ExtraTypes>
+          <ExtraType DataType="SupportModuleDefinition, Assembly-CSharp" />
+          <ExtraType DataType="SquadronModuleDefinition, Assembly-CSharp" />
+        </ExtraTypes>
+        <FilePath>Simulation/Battles/ModuleDefinitions[*].xml</FilePath>
+      </DatabasePlugin>
+
+      <!-- Constructibles -->
+      <DatabasePlugin DataType="IndustryConstructibleElement, Assembly-CSharp">
+        <ExtraTypes>
+          <ExtraType DataType="StarSystemImprovementDefinition, Assembly-CSharp" />
+          <ExtraType DataType="PlanetImprovementDefinition, Assembly-CSharp" />
+          <ExtraType DataType="PlanetTerraformationDefinition, Assembly-CSharp" />
+          <ExtraType DataType="PlanetActionImprovementDefinition, Assembly-CSharp" />
+          <ExtraType DataType="StarSystemResourceImprovementDefinition, Assembly-CSharp" />
+          <ExtraType DataType="StarSystemDecolonizeImprovementDefinition, Assembly-CSharp" />
+          <ExtraType DataType="PlanetColonizationConstructibleElement, Assembly-CSharp" />
+          <ExtraType DataType="StarSystemPopulationTransformImprovementDefinition, Assembly-CSharp" />
+          <ExtraType DataType="TradeCompanyHeadquartersStarSystemImprovementDefinition, Assembly-CSharp" />
+          <ExtraType DataType="TradeCompanySubsidiaryStarSystemImprovementDefinition, Assembly-CSharp" />
+          <ExtraType DataType="StarSystemTimeBubbleImprovementDefinition, Assembly-CSharp" />
+          <ExtraType DataType="StarSystemCollectRelicImprovementDefinition, Assembly-CSharp" />
+        </ExtraTypes>
+        <FilePath>Simulation/ConstructibleElement_Industry[*].xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="ScienceConstructibleElement, Assembly-CSharp">
+        <ExtraTypes>
+          <ExtraType DataType="TechnologyDefinition, Assembly-CSharp" />
+        </ExtraTypes>
+        <FilePath>Simulation/ConstructibleElement_Science[*].xml</FilePath>
+        <FilePath>Simulation/ConstructibleElement_Science.xml</FilePath>
+      </DatabasePlugin>
+
+      <!-- GUI -->
+      <DatabasePlugin DataType="Amplitude.Unity.Gui.GuiElement, Assembly-CSharp-firstpass">
+        <ExtraTypes>
+          <ExtraType DataType="Amplitude.Unity.Gui.ExtendedGuiElement, Assembly-CSharp-firstpass" />
+          <ExtraType DataType="NewGameScreenGuiElement, Assembly-CSharp" />
+          <ExtraType DataType="TechnologyGuiElement2, Assembly-CSharp" />
+        </ExtraTypes>
+        <FilePath>GUI/GUIElements[*].xml</FilePath>
+      </DatabasePlugin>
+
+      <!-- Faction Traits -->
+      <DatabasePlugin DataType="FactionTrait, Assembly-CSharp" Priority="20">
+        <ExtraTypes>
+          <ExtraType DataType="FactionAffinity, Assembly-CSharp" />
+          <ExtraType DataType="FactionAffinityMapping, Assembly-CSharp" />
+          <ExtraType DataType="FactionPopulationTrait, Assembly-CSharp" />
+        </ExtraTypes>
+        <FilePath>Simulation/FactionTraits.xml</FilePath>
+        <FilePath>Simulation/FactionTraits[*].xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="FactionAffinity, Assembly-CSharp">
+        <FilePath>Simulation/FactionTraits[*].xml</FilePath>
+      </DatabasePlugin>
+
+      <!-- Factions -->
+      <DatabasePlugin DataType="Faction, Assembly-CSharp">
+        <ExtraTypes>
+          <ExtraType DataType="MajorFaction, Assembly-CSharp" />
+        </ExtraTypes>
+        <FilePath>Simulation/Factions[*].xml</FilePath>
+      </DatabasePlugin>
+
+      <DatabasePlugin DataType="MajorFaction, Assembly-CSharp">
+        <FilePath>Simulation/Factions[*].xml</FilePath>
+      </DatabasePlugin>
+
+      <!-- Academy Preferences -->
+      <DatabasePlugin DataType="AcademyRolePreference, Assembly-CSharp">
+        <FilePath>Simulation/AcademyRolePreference.xml</FilePath>
+      </DatabasePlugin>
+
+      <!-- Quests -->
+      <DatabasePlugin DataType="QuestDefinition, Assembly-CSharp">
+        <ExtraTypes>
+          <ExtraType DataType="TutorialDefinition, Assembly-CSharp" />
+        </ExtraTypes>
+        <Overrides>
+          <Override Name="Prerequisites" DataType="Amplitude.Query.Xml.XmlQueryPrerequisites, Assembly-CSharp-firstpass">
+            <ExtraType Name="FilterConstellationByDistance" DataType="QuestFilterConstellationByDistance, Assembly-CSharp" />
+            <ExtraType Name="FilterSystemByStatus" DataType="QuestFilterSystemByStatus, Assembly-CSharp" />
+            <ExtraType Name="FilterSystemByDistance" DataType="QuestFilterSystemByDistance, Assembly-CSharp" />
+            <ExtraType Name="FilterSystemByCuriosity" DataType="QuestFilterSystemByCuriosity, Assembly-CSharp" />
+            <ExtraType Name="FilterPlanetByCuriosity" DataType="QuestFilterPlanetByCuriosity, Assembly-CSharp" />
+            <ExtraType Name="FilterShipDesignByModule" DataType="QuestFilterShipDesignByModule, Assembly-CSharp" />
+            <ExtraType Name="FilterByStringValue" DataType="QuestFilterByStringValue, Assembly-CSharp" />
+            <ExtraType Name="IsNot" DataType="QuestFilterDifferentEntity, Assembly-CSharp" />
+            <ExtraType Name="FilterColonizedStarSystemByTraitorPresence" DataType="QuestFilterByTraitorPresence, Assembly-CSharp" />
+          </Override>
+          <Override Name="Sorter" DataType="Amplitude.Query.Xml.XmlQuerySorter, Assembly-CSharp-firstpass">
+            <ExtraType Name="SortSystemByDistance" DataType="QuestSorterSystemByDistance, Assembly-CSharp" />
+            <ExtraType Name="SortSystemByQuestNodeRank" DataType="QuestSorterSystemByQuestNodeRank, Assembly-CSharp" />
+            <ExtraType Name="SortConstellationByDistance" DataType="QuestSorterConstellationByDistance, Assembly-CSharp" />
+            <ExtraType Name="SortRemovePlanetsOfSameSystem" DataType="QuestSorterRemovePlanetsOfSameSystem, Assembly-CSharp" />
+          </Override>
+        </Overrides>
+        <FilePath>Quests/QuestDefinitions[*].xml</FilePath>
+      </DatabasePlugin>
+
+      <!-- Game Settings -->
+      <DatabasePlugin DataType="GameSettingDefinition, Assembly-CSharp">
+        <ExtraTypes>
+          <ExtraType DataType="WorldSettingDefinition, Assembly-CSharp" />
+        </ExtraTypes>
+        <FilePath>Settings/GameSettingDefinitions.xml</FilePath>
+        <FilePath>Settings/WorldSettingDefinitions.xml</FilePath>
+      </DatabasePlugin>
+
+      <!-- Ground Battles -->
+      <DatabasePlugin DataType="GroundBattleOutcomeDefinition, Assembly-CSharp">
+        <ExtraTypes>
+          <ExtraType DataType="GroundBattleOutcomeRazeDefinition, Assembly-CSharp" />
+        </ExtraTypes>
+        <FilePath>Simulation/Battles/GroundBattleOutcomeDefinitions.xml</FilePath>
+      </DatabasePlugin>
+
+      <!-- Academy -->
+      <DatabasePlugin DataType="AcademyStateDefinition, Assembly-CSharp">
+        <FilePath>Academy/AcademyStateDefinitions.xml</FilePath>
+      </DatabasePlugin>
+
+      <!-- Hacking Outcome Definition -->
+      <DatabasePlugin DataType="HackingOperationOutcomeDefinition, Assembly-CSharp">
+        <ExtraTypes>
+          <!-- Colonized systems -->
+          <ExtraType DataType="HackingOperationOutcomeDiplomaticPressureEffectDefinition, Assembly-CSharp" />
+          <ExtraType DataType="HackingOperationOutcomeEmpireRebellionDefinition, Assembly-CSharp" />
+          <ExtraType DataType="HackingOperationOutcomeTemporaryEffectDefinition, Assembly-CSharp" />
+          <ExtraType DataType="HackingOperationOutcomeMinorRelationTemporaryEffectDefinition, Assembly-CSharp" />
+          <ExtraType DataType="HackingOperationOutcomeMinorSuzerainRelationTemporaryEffectDefinition, Assembly-CSharp" />
+          <ExtraType DataType="HackingOperationOutcomeSetPoliticsDefinition, Assembly-CSharp" />
+          <ExtraType DataType="HackingOperationOutcomeSpawnTraitorsDefinition, Assembly-CSharp" />
+          <ExtraType DataType="HackingOperationOutcomeWoundHeroDefinition, Assembly-CSharp" />
+          <ExtraType DataType="HackingOperationOutcomeStealTechnologyDefinition, Assembly-CSharp" />
+          <ExtraType DataType="HackingOperationOutcomeStealSystemDefinition, Assembly-CSharp" />
+          <ExtraType DataType="HackingOperationOutcomeSystemRebellionDefinition, Assembly-CSharp" />
+          <ExtraType DataType="HackingOperationOutcomeTransferResourcesDefinition, Assembly-CSharp" />
+          <ExtraType DataType="HackingOperationOutcomeChangePirateRelationDefinition, Assembly-CSharp" />
+          <ExtraType DataType="HackingOperationOutcomeSystemTemporaryEffectDefinition, Assembly-CSharp" />
+          <ExtraType DataType="HackingOperationOutcomeAbortTracedOperationDefinition, Assembly-CSharp" />
+          <ExtraType DataType="HackingOperationOutcomeSpawnBackdoorDefinition, Assembly-CSharp" />
+          <ExtraType DataType="HackingOperationOutcomeDestroyBackdoorDefinition, Assembly-CSharp" />
+          <ExtraType DataType="HackingOperationOutcomeStealPirateResourcesDefinition, Assembly-CSharp" />
+          <ExtraType DataType="HackingOperationOutcomeTurnTraitorsIntoSuperPopulationDefinition, Assembly-CSharp" />
+          <ExtraType DataType="HackingOperationOutcomeTurnTraitorsIntoSuperPopulationOnEmpireDefinition, Assembly-CSharp" />
+          <ExtraType DataType="HackingOperationOutcomeAcademyDecreaseReparationsDefinition, Assembly-CSharp" />
+          <ExtraType DataType="HackingOperationOutcomeAcademyIncreaseContributionDefinition, Assembly-CSharp" />
+          <ExtraType DataType="HackingOperationOutcomeAcademyImmobilizeFleetsDefinition, Assembly-CSharp" />
+          <ExtraType DataType="HackingOperationOutcomeAcademyEarnHeroPointsDefinition, Assembly-CSharp" />
+
+          <!-- Special nodes -->
+          <ExtraType DataType="HackingOperationOutcomeCreateBeaconDefinition, Assembly-CSharp" />
+          <ExtraType DataType="HackingOperationOutcomeReclaimLostSystemDefinition, Assembly-CSharp" />
+
+          <!-- Star system nodes -->
+          <ExtraType DataType="HackingOperationOutcomeSpawnGhostSystemDefinition, Assembly-CSharp"/>
+          <ExtraType DataType="HackingOperationOutcomeDestroyGhostSystemDefinition, Assembly-CSharp"/>
+
+          <!-- Outcome Set-->
+          <ExtraType DataType="HackingOperationOutcomeSetDefinition, Assembly-CSharp"/>
+
+        </ExtraTypes>
+        <FilePath>Hacking/HackingOperationOutcomeDefinitions.xml</FilePath>
+        <FilePath>Hacking/HackingOperationOutcomeDefinitions[*].xml</FilePath>
+      </DatabasePlugin>
+
+      <!-- Localization -->
+      <LocalizationPlugin DefaultLanguage="English">
+        <Directory>Localization</Directory>
+      </LocalizationPlugin>
+    </Plugins>
+  </RuntimeModule>
+</Datatable>

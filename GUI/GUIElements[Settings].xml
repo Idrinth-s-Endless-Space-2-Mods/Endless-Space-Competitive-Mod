@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+  <!-- Luxury Type Quantities -->
+  <GuiElement Name="SettingLuxuryTypes">
+    <Title>%SettingLuxuryTypesTitle</Title>
+    <Description>%SettingLuxuryTypesDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingLuxuryTypesLow">
+    <Title>%SettingSettingLuxuryTypesLowTitle</Title>
+    <Description>%SettingLuxuryTypesLowDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingLuxuryTypesMedium">
+    <Title>%SettingSettingLuxuryTypesMediumTitle</Title>
+    <Description>%SettingLuxuryTypesMediumDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingLuxuryTypesHigh">
+    <Title>%SettingSettingLuxuryTypesHighTitle</Title>
+    <Description>%SettingLuxuryTypesHighDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingLuxuryTypesAll">
+    <Title>%SettingSettingLuxuryTypesAllTitle</Title>
+    <Description>%SettingLuxuryTypesAllDescription</Description>
+  </GuiElement>
+  
+  <!-- Animation Speed -->
+  <GuiElement Name="SettingAnimationSpeedMultiplier8">
+    <Title>%SettingAnimationSpeedMultiplier8Title</Title>
+    <Description>%SettingAnimationSpeedMultiplier8Description</Description>
+  </GuiElement>
+  
+  <GuiElement Name="SettingAnimationSpeedMultiplier16">
+    <Title>%SettingAnimationSpeedMultiplier16Title</Title>
+    <Description>%SettingAnimationSpeedMultiplier16Description</Description>
+  </GuiElement>
+  
+  <!-- Game Time Limit -->
+  <GuiElement Name="SettingEndTurnTimerGlobalDuration1800">
+    <Title>%SettingEndTurnTimerGlobalDuration1800Title</Title>
+    <Description>%SettingEndTurnTimerGlobalDuration1800Description</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingEndTurnTimerGlobalDuration3600">
+    <Title>%SettingEndTurnTimerGlobalDuration3600Title</Title>
+    <Description>%SettingEndTurnTimerGlobalDuration3600Description</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingEndTurnTimerGlobalDuration7200">
+    <Title>%SettingEndTurnTimerGlobalDuration7200Title</Title>
+    <Description>%SettingEndTurnTimerGlobalDuration7200Description</Description>
+  </GuiElement>
+  
+    <GuiElement Name="SettingEndTurnTimerGlobalDuration21600">
+    <Title>%SettingEndTurnTimerGlobalDuration21600Title</Title>
+    <Description>%SettingEndTurnTimerGlobalDuration21600Description</Description>
+  </GuiElement>
+  
+    <GuiElement Name="SettingEndTurnTimerGlobalDuration25200">
+    <Title>%SettingEndTurnTimerGlobalDuration25200Title</Title>
+    <Description>%SettingEndTurnTimerGlobalDuration25200Description</Description>
+  </GuiElement>
+  
+  <GuiElement Name="SettingEndTurnTimerGlobalDuration28800">
+    <Title>%SettingEndTurnTimerGlobalDuration28800Title</Title>
+    <Description>%SettingEndTurnTimerGlobalDuration28800Description</Description>
+  </GuiElement>
+  
+  <!-- End Turn Timers -->
+  <GuiElement Name="SettingEndTurnTimerDuration360">
+    <Title>%SettingEndTurnTimerDuration360Title</Title>
+    <Description>%SettingEndTurnTimerDuration360Description</Description>
+  </GuiElement>
+  
+  <GuiElement Name="SettingEndTurnTimerDuration720">
+    <Title>%SettingEndTurnTimerDuration720Title</Title>
+    <Description>%SettingEndTurnTimerDuration720Description</Description>
+  </GuiElement>
+  
+  <!-- Extra Time per Era -->
+  <GuiElement Name="SettingEndTurnTimerEraAdditionalDuration120">
+    <Title>%SettingEndTurnTimerEraAdditionalDuration120Title</Title>
+    <Description>%SettingEndTurnTimerEraAdditionalDuration120Description</Description>
+  </GuiElement>
+  
+  <GuiElement Name="SettingEndTurnTimerEraAdditionalDuration180">
+    <Title>%SettingEndTurnTimerEraAdditionalDuration180Title</Title>
+    <Description>%SettingEndTurnTimerEraAdditionalDuration180Description</Description>
+  </GuiElement>
+  
+  <!-- Extra Time per System -->
+  <GuiElement Name="SettingEndTurnTimerSystemAdditionalDuration40">
+    <Title>%SettingEndTurnTimerSystemAdditionalDuration40Title</Title>
+    <Description>%SettingEndTurnTimerSystemAdditionalDuration40Description</Description>
+  </GuiElement>
+  
+  <GuiElement Name="SettingEndTurnTimerSystemAdditionalDuration50">
+    <Title>%SettingEndTurnTimerSystemAdditionalDuration50Title</Title>
+    <Description>%SettingEndTurnTimerSystemAdditionalDuration50Description</Description>
+  </GuiElement>
+  
+  <GuiElement Name="SettingEndTurnTimerSystemAdditionalDuration60">
+    <Title>%SettingEndTurnTimerSystemAdditionalDuration60Title</Title>
+    <Description>%SettingEndTurnTimerSystemAdditionalDuration60Description</Description>
+  </GuiElement>
+  
+  <GuiElement Name="SettingEndTurnTimerSystemAdditionalDuration120">
+    <Title>%SettingEndTurnTimerSystemAdditionalDuration120Title</Title>
+    <Description>%SettingEndTurnTimerSystemAdditionalDuration120Description</Description>
+  </GuiElement>
+  
+  <!-- Overtime -->
+  <GuiElement Name="SettingMaxOvertime15">
+    <Title>%SettingMaxOvertime15Title</Title>
+    <Description>%SettingMaxOvertime15Description</Description>
+  </GuiElement>
+  
+  <GuiElement Name="SettingMaxOvertime30">
+    <Title>%SettingMaxOvertime30Title</Title>
+    <Description>%SettingMaxOvertime30Description</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingMaxOvertime360">
+    <Title>%SettingMaxOvertime360Title</Title>
+    <Description>%SettingMaxOvertime360Description</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingMaxOvertime480">
+    <Title>%SettingMaxOvertime480Title</Title>
+    <Description>%SettingMaxOvertime480Description</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingMaxOvertime720">
+    <Title>%SettingMaxOvertime720Title</Title>
+    <Description>%SettingMaxOvertime720Description</Description>
+  </GuiElement>
+  
+  <!-- Extra Time if Last Player -->
+  <GuiElement Name="SettingEndTurnTimerLastPlayerDuration0">
+    <Title>%SettingEndTurnTimerLastPlayerDuration0Title</Title>
+    <Description>%SettingEndTurnTimerLastPlayerDuration0Description</Description>
+  </GuiElement>
+  
+  <GuiElement Name="SettingEndTurnTimerLastPlayerDuration10">
+    <Title>%SettingEndTurnTimerLastPlayerDuration10Title</Title>
+    <Description>%SettingEndTurnTimerLastPlayerDuration10Description</Description>
+  </GuiElement>
+  
+  <GuiElement Name="SettingEndTurnTimerLastPlayerDuration120">
+    <Title>%SettingEndTurnTimerLastPlayerDuration120Title</Title>
+    <Description>%SettingEndTurnTimerLastPlayerDuration120Description</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingEndTurnTimerLastPlayerDuration180">
+    <Title>%SettingEndTurnTimerLastPlayerDuration180Title</Title>
+    <Description>%SettingEndTurnTimerLastPlayerDuration180Description</Description>
+  </GuiElement>
+  
+  <!-- Autostart Battle Timer -->
+  <GuiElement Name="SettingBattleAutoStartTimerDuration45">
+    <Title>%SettingBattleAutoStartTimerDuration45Title</Title>
+    <Description>%SettingBattleAutoStartTimerDuration45Description</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingBattleAutoStartTimerDuration60">
+    <Title>%SettingBattleAutoStartTimerDuration60Title</Title>
+    <Description>%SettingBattleAutoStartTimerDuration60Description</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingBattleAutoStartTimerDuration120">
+    <Title>%SettingBattleAutoStartTimerDuration120Title</Title>
+    <Description>%SettingBattleAutoStartTimerDuration120Description</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingBattleAutoStartTimerDuration180">
+    <Title>%SettingBattleAutoStartTimerDuration180Title</Title>
+    <Description>%SettingBattleAutoStartTimerDuration180Description</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingBattleAutoStartTimerDuration240">
+    <Title>%SettingBattleAutoStartTimerDuration240Title</Title>
+    <Description>%SettingBattleAutoStartTimerDuration240Description</Description>
+  </GuiElement>
+
+  <!-- Autostart Battle Timer -->
+  <GuiElement Name="SettingBattleOutcomeTimerDuration45">
+    <Title>%SettingBattleOutcomeTimerDuration45Title</Title>
+    <Description>%SettingBattleOutcomeTimerDuration45Description</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingBattleOutcomeTimerDuration60">
+    <Title>%SettingBattleOutcomeTimerDuration60Title</Title>
+    <Description>%SettingBattleOutcomeTimerDuration60Description</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingBattleOutcomeTimerDuration120">
+    <Title>%SettingBattleOutcomeTimerDuration120Title</Title>
+    <Description>%SettingBattleOutcomeTimerDuration120Description</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingBattleOutcomeTimerDuration180">
+    <Title>%SettingBattleOutcomeTimerDuration180Title</Title>
+    <Description>%SettingBattleOutcomeTimerDuration180Description</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingBattleOutcomeTimerDuration240">
+    <Title>%SettingBattleOutcomeTimerDuration240Title</Title>
+    <Description>%SettingBattleOutcomeTimerDuration240Description</Description>
+  </GuiElement>
+
+  <!-- Autostart Hacking Outcome Timer -->
+  <GuiElement Name="SettingHackingOutcomeTimerDuration60">
+    <Title>%SettingHackingOutcomeTimerDuration60Title</Title>
+    <Description>%SettingHackingOutcomeTimerDuration60Description</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingHackingOutcomeTimerDuration120">
+    <Title>%SettingHackingOutcomeTimerDuration120Title</Title>
+    <Description>%SettingHackingOutcomeTimerDuration120Description</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingHackingOutcomeTimerDuration180">
+    <Title>%SettingHackingOutcomeTimerDuration180Title</Title>
+    <Description>%SettingHackingOutcomeTimerDuration180Description</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingHackingOutcomeTimerDuration240">
+    <Title>%SettingHackingOutcomeTimerDuration240Title</Title>
+    <Description>%SettingHackingOutcomeTimerDuration240Description</Description>
+  </GuiElement>
+  
+  <!-- Minor Factions Quantity -->
+  <GuiElement Name="SettingMinorFactionsQuantity">
+    <Title>%SettingMinorFactionsQuantityTitle</Title>
+    <Description>%SettingMinorFactionsQuantityDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingMinorFactionsQuantity0">
+    <Title>%SettingMinorFactionsQuantity0Title</Title>
+    <Description>%SettingMinorFactionsQuantity0Description</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingMinorFactionsQuantity1">
+    <Title>%SettingMinorFactionsQuantity1Title</Title>
+    <Description>%SettingMinorFactionsQuantity1Description</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingMinorFactionsQuantity2">
+    <Title>%SettingMinorFactionsQuantity2Title</Title>
+    <Description>%SettingMinorFactionsQuantity2Description</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingMinorFactionsQuantity3">
+    <Title>%SettingMinorFactionsQuantity3Title</Title>
+    <Description>%SettingMinorFactionsQuantity3Description</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingMinorFactionsQuantity4">
+    <Title>%SettingMinorFactionsQuantity4Title</Title>
+    <Description>%SettingMinorFactionsQuantity4Description</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingMinorFactionsQuantity5">
+    <Title>%SettingMinorFactionsQuantity5Title</Title>
+    <Description>%SettingMinorFactionsQuantity5Description</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingMinorFactionsQuantity6">
+    <Title>%SettingMinorFactionsQuantity6Title</Title>
+    <Description>%SettingMinorFactionsQuantity6Description</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingMinorFactionsQuantity7">
+    <Title>%SettingMinorFactionsQuantity7Title</Title>
+    <Description>%SettingMinorFactionsQuantity7Description</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingMinorFactionsQuantity8">
+    <Title>%SettingMinorFactionsQuantity8Title</Title>
+    <Description>%SettingMinorFactionsQuantity8Description</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingAllowPVPHacking">
+    <Title>%SettingAllowPVPHackingTitle</Title>
+    <Description>%SettingAllowPVPHackingDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingAllowPVPHackingTrue">
+    <Title>%SettingAllowPVPHackingTrueTitle</Title>
+    <Description>%SettingAllowPVPHackingTrueDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingAllowPVPHackingFalse">
+    <Title>%SettingAllowPVPHackingFalseTitle</Title>
+    <Description>%SettingAllowPVPHackingFalseDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingAllowAcademyExpansion">
+    <Title>%SettingAllowAcademyExpansionTitle</Title>
+    <Description>%SettingAllowAcademyExpansionDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingAllowAcademyExpansionTrue">
+    <Title>%SettingAllowAcademyExpansionTrueTitle</Title>
+    <Description>%SettingAllowAcademyExpansionTrueDescription</Description>
+  </GuiElement>
+
+  <GuiElement Name="SettingAllowAcademyExpansionFalse">
+    <Title>%SettingAllowAcademyExpansionFalseTitle</Title>
+    <Description>%SettingAllowAcademyExpansionFalseDescription</Description>
+  </GuiElement>
+</Datatable>

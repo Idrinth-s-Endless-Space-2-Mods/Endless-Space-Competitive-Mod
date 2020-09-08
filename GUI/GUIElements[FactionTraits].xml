@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+  <!-- Z'vali Population Trait -->
+  <ExtendedGuiElement Name="FactionTraitMinorGamers02">
+    <Title>%FactionTraitMinorGamers02Title</Title>
+    <Description>%FactionTraitMinorGamers02Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Headers/HeaderTraits" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%GamersBubbleExpansionEffect</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+  
+  <!-- Bhagaba Population Trait -->
+  <GuiElement Name="PopulationModifiersTraitSecondaryInfluenceFertile">
+    <Title>%PopulationModifiersTraitBhagabaInfluenceTitle</Title>
+  </GuiElement>
+
+  <!-- Nakalim Population Collection Bonus (Custom) -->
+  <GuiElement Name="PopulationCollectionBonusTraitTemplars">
+    <Title>%PopulationCollectionBonusTraitTemplarsTitle</Title>
+    <Description>%PopulationCollectionBonusTraitTemplarsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="DiplomaticAbilitiesTruceSmall" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PopulationCollectionBonusTraitCustomFactionESCMNakalim">
+    <Title>%PopulationCollectionBonusTraitTemplarsTitle</Title>
+    <Description>%PopulationCollectionBonusTraitTemplarsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="DiplomaticAbilitiesTruceSmall" />
+    </Icons>
+  </GuiElement>
+</Datatable>
